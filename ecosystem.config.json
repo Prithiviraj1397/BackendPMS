@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "colan-test",
+      "script": "dist/app.js",
+      "instances": 1,
+      "autorestart": true,
+      "watch": true,
+      "time": true,
+      "env": {
+        "NODE_ENV": "production",
+        "PORT":8000
+      }
+    }
+  ]
+}
