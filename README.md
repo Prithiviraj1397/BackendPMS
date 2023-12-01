@@ -1,2 +1,2 @@
 # BackendPMS
-Node GraphQL MongoDB
+Node GraphQL MongoDB TypeScript
