@@ -1,0 +1,6 @@
+[2023-12-01T05:10:47.110Z] [[32mINFO[39m] 	"Mongoose.connection ERR: connect ECONNREFUSED ::1:27017"
+[2023-12-01T05:24:23.488Z] [[32mINFO[39m] 	"Mongoose.connection ERR: connect ECONNREFUSED ::1:27017"
+[2023-12-01T05:33:57.783Z] [[32mINFO[39m] 	"Mongoose.connection ERR: connect ECONNREFUSED ::1:27017"
+[2023-12-01T05:34:58.669Z] [[32mINFO[39m] 	"Mongoose.connection ERR: connect ECONNREFUSED ::1:27017"
+[2023-12-01T05:36:17.068Z] [[32mINFO[39m] 	"Mongoose.connection ERR: connect ECONNREFUSED ::1:27017"
+[2023-12-01T05:36:34.946Z] [[32mINFO[39m] 	"MongoDB connected successfully"
