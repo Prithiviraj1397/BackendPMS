@@ -5,7 +5,6 @@ import httpStatus from 'http-status';
 import { Request, Response, NextFunction } from 'express';
 import { Project, Client } from '../../models';
 import Validator from 'validator';
-import { logger } from '../../config/logger'
 
 //Query Functions
 const getAllProject = async (_: any, { Input }: { Input: Pagination }, context: any) => {

@@ -34,11 +34,7 @@ const startServer = async () => {
 
     await server.start();
     const corsOptions = {
-        origin: [
-            'https://studio.apollographql.com',
-            'http://localhost:8000',
-            'http://localhost:5000',
-        ],
+        origin: process.env.ALLOWEDORIGIN,
         credentials: true,
     }
     app.use(

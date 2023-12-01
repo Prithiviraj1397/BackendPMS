@@ -1,17 +1,19 @@
 import mongoose, { ConnectOptions } from 'mongoose';
-import { logger } from './logger'
-const DB_URL: string = process.env.MONGO_URL ?? 'mongodb://localhost:27017/graphqlTask';
+const DB_URL: string = process.env.DATABASE_URL ?? 'mongodb://127.0.0.1:27017/graphqlTask';
 
 export const connect = () => {
-    mongoose.connect(DB_URL);
-    console.log("🚀 ~ file: db.ts:8 ~ connect ~ DB_URL:", DB_URL)
+
+    mongoose.connect(DB_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    } as ConnectOptions);
 
     mongoose.connection.once("open", async () => {
-        logger.info("MongoDB connected successfully");
+        console.log("MongoDB connected successfully");
     });
 
     mongoose.connection.on('error', (err: any) => {
-        logger.info("Mongoose.connection ERR:", err)
+        console.log("Mongoose.connection ERR:", err)
         return process.exit(1);
     })
 
